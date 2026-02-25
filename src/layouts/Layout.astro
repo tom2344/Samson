@@ -1,4 +1,6 @@
 ---
+import Analytics from '@vercel/analytics/astro';
+
 interface Props {
 	title?: string;
 	description?: string;
@@ -103,6 +105,7 @@ const currentPath = Astro.url.pathname;
 		      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
 		  })(document, 'script');
 		</script>
+		<Analytics />
 	</body>
 </html>
 
