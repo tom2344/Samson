@@ -1,0 +1,174 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<section class="experience-hero">
+		<div class="container">
+			<h1>Experience</h1>
+		</div>
+	</section>
+
+	<section class="experience-content">
+		<div class="container">
+			<div class="content-wrapper">
+				<p class="intro-text">
+					I bring a unique mix of technical, analytical, and creative experience that allows me to communicate clearly across industries.
+				</p>
+
+				<div class="experience-section">
+					<h2>Real Estate Sales & Marketing – Zylus Group International</h2>
+					<ul>
+						<li>Exceeded sales targets through strategic prospecting</li>
+						<li>Crafted persuasive pitches and closed high-value deals</li>
+						<li>Created digital content that positioned properties effectively</li>
+						<li>Leveraged multimedia platforms and partnerships for lead generation</li>
+					</ul>
+				</div>
+
+				<div class="experience-section">
+					<h2>Personal Assistant (Contract) – FCMB Group</h2>
+					<ul>
+						<li>Supported banking and marketing operations</li>
+						<li>Coordinated content execution across platforms</li>
+						<li>Maintained clear, consistent communication with stakeholders</li>
+					</ul>
+				</div>
+
+				<div class="experience-section">
+					<h2>Engineering Background</h2>
+					<p>
+						Work across healthcare infrastructure and construction strengthened my:
+					</p>
+					<ul>
+						<li>Attention to detail</li>
+						<li>Project management discipline</li>
+						<li>Problem-solving skills</li>
+					</ul>
+					<p class="impact-note">
+						These skills now directly support structured, reliable content delivery.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.experience-hero {
+		padding: 80px 0 40px;
+		background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+	}
+
+	.experience-hero h1 {
+		font-size: 48px;
+		font-weight: 700;
+		color: #111827;
+		text-align: center;
+	}
+
+	.experience-content {
+		padding: 60px 0 80px;
+	}
+
+	.content-wrapper {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.intro-text {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.6;
+		color: #111827;
+		margin-bottom: 60px;
+	}
+
+	.experience-section {
+		margin-bottom: 56px;
+		padding-bottom: 56px;
+		border-bottom: 1px solid #e5e7eb;
+	}
+
+	.experience-section:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.experience-section h2 {
+		font-size: 26px;
+		font-weight: 600;
+		color: #111827;
+		margin-bottom: 24px;
+	}
+
+	.experience-section p {
+		font-size: 18px;
+		line-height: 1.7;
+		color: #4b5563;
+		margin-bottom: 20px;
+	}
+
+	.experience-section ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.experience-section li {
+		font-size: 18px;
+		line-height: 1.7;
+		color: #4b5563;
+		padding: 12px 0 12px 32px;
+		position: relative;
+	}
+
+	.experience-section li::before {
+		content: '•';
+		position: absolute;
+		left: 12px;
+		color: #6b7280;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	.impact-note {
+		margin-top: 20px;
+		font-weight: 500;
+		color: #374151;
+	}
+
+	@media (max-width: 768px) {
+		.experience-hero {
+			padding: 48px 0 32px;
+		}
+
+		.experience-hero h1 {
+			font-size: 36px;
+		}
+
+		.experience-content {
+			padding: 40px 0 60px;
+		}
+
+		.intro-text {
+			font-size: 20px;
+			margin-bottom: 48px;
+		}
+
+		.experience-section {
+			margin-bottom: 48px;
+			padding-bottom: 48px;
+		}
+
+		.experience-section h2 {
+			font-size: 22px;
+		}
+
+		.experience-section p,
+		.experience-section li {
+			font-size: 16px;
+		}
+	}
+</style>

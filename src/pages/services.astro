@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<section class="services-hero">
+		<div class="container">
+			<h1>Services</h1>
+		</div>
+	</section>
+
+	<section class="services-main">
+		<div class="container">
+			<div class="services-list">
+				<div class="service-item">
+					<h2>Content Strategy & Planning</h2>
+					<p>Clear direction for your content so every piece serves a purpose.</p>
+				</div>
+
+				<div class="service-item">
+					<h2>Brand Voice & Messaging</h2>
+					<p>Defining how your brand sounds — consistent, human, and recognizable.</p>
+				</div>
+
+				<div class="service-item">
+					<h2>Writing for SaaS, Tech & Consulting</h2>
+					<p>Turning complex systems and ideas into content people actually understand.</p>
+				</div>
+
+				<div class="service-item">
+					<h2>Thought Leadership Content</h2>
+					<p>Positioning you as a credible voice in your space through clarity and insight.</p>
+				</div>
+			</div>
+
+			<div class="additional-services">
+				<h3>Additional Support Services</h3>
+				<ul>
+					<li>Digital Marketing</li>
+					<li>Business Analytics</li>
+					<li>Real Estate Marketing & Photography</li>
+					<li>Visual & Interior Design Support</li>
+					<li>Customer Service & Data Entry</li>
+				</ul>
+			</div>
+
+			<div class="cta-section">
+				<a href="/contact" class="cta-button">Start a conversation</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.services-hero {
+		padding: 80px 0 40px;
+		background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+	}
+
+	.services-hero h1 {
+		font-size: 48px;
+		font-weight: 700;
+		color: #111827;
+		text-align: center;
+	}
+
+	.services-main {
+		padding: 60px 0 80px;
+	}
+
+	.services-list {
+		max-width: 900px;
+		margin: 0 auto 80px;
+	}
+
+	.service-item {
+		padding: 40px;
+		background: #f9fafb;
+		border-radius: 12px;
+		margin-bottom: 24px;
+		transition: all 0.2s;
+	}
+
+	.service-item:hover {
+		background: #f3f4f6;
+		transform: translateX(8px);
+	}
+
+	.service-item h2 {
+		font-size: 24px;
+		font-weight: 600;
+		color: #111827;
+		margin-bottom: 12px;
+	}
+
+	.service-item p {
+		font-size: 18px;
+		line-height: 1.7;
+		color: #4b5563;
+	}
+
+	.additional-services {
+		max-width: 900px;
+		margin: 0 auto 64px;
+		padding: 40px;
+		background: white;
+		border: 2px solid #e5e7eb;
+		border-radius: 12px;
+	}
+
+	.additional-services h3 {
+		font-size: 22px;
+		font-weight: 600;
+		color: #111827;
+		margin-bottom: 20px;
+	}
+
+	.additional-services ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.additional-services li {
+		font-size: 17px;
+		color: #4b5563;
+		padding: 10px 0;
+		border-bottom: 1px solid #e5e7eb;
+		position: relative;
+		padding-left: 28px;
+	}
+
+	.additional-services li:last-child {
+		border-bottom: none;
+	}
+
+	.additional-services li::before {
+		content: '→';
+		position: absolute;
+		left: 0;
+		color: #6b7280;
+		font-weight: 600;
+	}
+
+	.cta-section {
+		text-align: center;
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: 16px 32px;
+		background: #111827;
+		color: white;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 16px;
+		border-radius: 8px;
+		transition: all 0.2s;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	.cta-button:hover {
+		background: #374151;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	@media (max-width: 768px) {
+		.services-hero {
+			padding: 48px 0 32px;
+		}
+
+		.services-hero h1 {
+			font-size: 36px;
+		}
+
+		.services-main {
+			padding: 40px 0 60px;
+		}
+
+		.service-item {
+			padding: 28px;
+		}
+
+		.service-item h2 {
+			font-size: 20px;
+		}
+
+		.service-item p {
+			font-size: 16px;
+		}
+
+		.additional-services {
+			padding: 28px;
+		}
+
+		.additional-services h3 {
+			font-size: 20px;
+		}
+
+		.additional-services li {
+			font-size: 16px;
+		}
+	}
+</style>

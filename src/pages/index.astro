@@ -1,0 +1,273 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<section class="hero">
+		<div class="container">
+			<div class="hero-content">
+				<div class="hero-text">
+					<h1>Olanrewaju (Samson) Abiola</h1>
+					<h2 class="subtitle">Content Architect & Brand Voice Strategist</h2>
+					<p class="hero-description">
+						I help SaaS, tech, consulting, and growth-stage companies turn complex ideas into clear, human stories that build trust, credibility, and understanding.
+					</p>
+					<a href="/contact" class="cta-button">Let's talk about your content</a>
+				</div>
+				<div class="hero-image">
+					<img src="/1765279891614.png" alt="Olanrewaju (Samson) Abiola - Content Architect" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="intro">
+		<div class="container">
+			<h2>Writing isn't just about sounding good. It's about being understood.</h2>
+			<p>
+				I work with brands and professionals who have something important to say but need help saying it clearly. My work focuses on clarity, authenticity, and communication that feels human — not robotic or over-polished.
+			</p>
+		</div>
+	</section>
+
+	<section class="services-preview">
+		<div class="container">
+			<h2>Services</h2>
+			<div class="services-grid">
+				<div class="service-card">
+					<h3>Content Strategy & Planning</h3>
+					<p>Clear direction for your content so every piece serves a purpose.</p>
+				</div>
+				<div class="service-card">
+					<h3>Brand Voice & Messaging</h3>
+					<p>Defining how your brand sounds — consistent, human, and recognizable.</p>
+				</div>
+				<div class="service-card">
+					<h3>SaaS & Tech Writing</h3>
+					<p>Turning complex systems and ideas into content people actually understand.</p>
+				</div>
+				<div class="service-card">
+					<h3>Thought Leadership Content</h3>
+					<p>Positioning you as a credible voice in your space through clarity and insight.</p>
+				</div>
+				<div class="service-card">
+					<h3>Digital & Real Estate Marketing Support</h3>
+					<p>Strategic content that converts and engages your target audience.</p>
+				</div>
+			</div>
+			<div class="cta-center">
+				<a href="/services" class="cta-link">View Services</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.hero {
+		padding: 80px 0;
+		background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 64px;
+		align-items: center;
+	}
+
+	.hero-text h1 {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 16px;
+		color: #111827;
+	}
+
+	.subtitle {
+		font-size: 24px;
+		font-weight: 500;
+		color: #374151;
+		margin-bottom: 24px;
+	}
+
+	.hero-description {
+		font-size: 18px;
+		line-height: 1.7;
+		color: #4b5563;
+		margin-bottom: 32px;
+	}
+
+	.hero-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-image img {
+		width: 100%;
+		max-width: 450px;
+		height: auto;
+		border-radius: 16px;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+	}
+
+	.cta-button {
+		display: inline-block;
+		padding: 16px 32px;
+		background: #111827;
+		color: white;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 16px;
+		border-radius: 8px;
+		transition: all 0.2s;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	}
+
+	.cta-button:hover {
+		background: #374151;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.intro {
+		padding: 80px 0;
+		background: white;
+	}
+
+	.intro .container {
+		max-width: 800px;
+		text-align: center;
+	}
+
+	.intro h2 {
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 1.4;
+		margin-bottom: 24px;
+		color: #111827;
+	}
+
+	.intro p {
+		font-size: 18px;
+		line-height: 1.7;
+		color: #4b5563;
+	}
+
+	.services-preview {
+		padding: 80px 0;
+		background: #f9fafb;
+	}
+
+	.services-preview h2 {
+		font-size: 36px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 48px;
+		color: #111827;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 32px;
+		margin-bottom: 48px;
+	}
+
+	.service-card {
+		background: white;
+		padding: 32px;
+		border-radius: 12px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+		transition: all 0.2s;
+	}
+
+	.service-card:hover {
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+		transform: translateY(-4px);
+	}
+
+	.service-card h3 {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 12px;
+		color: #111827;
+	}
+
+	.service-card p {
+		font-size: 16px;
+		line-height: 1.6;
+		color: #6b7280;
+	}
+
+	.cta-center {
+		text-align: center;
+	}
+
+	.cta-link {
+		display: inline-block;
+		padding: 14px 28px;
+		background: white;
+		color: #111827;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 16px;
+		border-radius: 8px;
+		border: 2px solid #111827;
+		transition: all 0.2s;
+	}
+
+	.cta-link:hover {
+		background: #111827;
+		color: white;
+		transform: translateY(-2px);
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 48px 0;
+		}
+
+		.hero-content {
+			grid-template-columns: 1fr;
+			gap: 40px;
+		}
+
+		.hero-text h1 {
+			font-size: 36px;
+		}
+
+		.subtitle {
+			font-size: 20px;
+		}
+
+		.hero-description {
+			font-size: 16px;
+		}
+
+		.intro {
+			padding: 48px 0;
+		}
+
+		.intro h2 {
+			font-size: 24px;
+		}
+
+		.intro p {
+			font-size: 16px;
+		}
+
+		.services-preview {
+			padding: 48px 0;
+		}
+
+		.services-preview h2 {
+			font-size: 28px;
+		}
+
+		.services-grid {
+			grid-template-columns: 1fr;
+			gap: 24px;
+		}
+	}
+</style>

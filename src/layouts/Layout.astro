@@ -1,0 +1,308 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = 'Content Architect', description = 'Olanrewaju (Samson) Abiola - Content Architect & Brand Voice Strategist helping SaaS, tech, and consulting companies turn complex ideas into clear, human stories.' } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container">
+				<nav class="nav">
+					<a href="/" class="logo">Olanrewaju Abiola</a>
+					<div class="nav-links">
+						<a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a>
+						<a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a>
+						<a href="/services" class={currentPath === '/services' ? 'active' : ''}>Services</a>
+						<a href="/experience" class={currentPath === '/experience' ? 'active' : ''}>Experience</a>
+						<a href="/contact" class={currentPath === '/contact' ? 'active' : ''}>Contact</a>
+					</div>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/olanrewaju0242/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+							</svg>
+						</a>
+						<a href="https://x.com/BadgerBlackout" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+							</svg>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<slot />
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-info">
+						<h3>Olanrewaju (Samson) Abiola</h3>
+						<p>Content Architect & Brand Voice Strategist</p>
+						<p><a href="mailto:abiola0242@gmail.com">abiola0242@gmail.com</a></p>
+					</div>
+					<div class="footer-links">
+						<a href="/">Home</a>
+						<a href="/about">About</a>
+						<a href="/services">Services</a>
+						<a href="/experience">Experience</a>
+						<a href="/contact">Contact</a>
+					</div>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/olanrewaju0242/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+							</svg>
+						</a>
+						<a href="https://x.com/BadgerBlackout" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; {new Date().getFullYear()} Olanrewaju Abiola. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script is:inline type="text/javascript">
+		  (function(d, t) {
+		      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		      v.onload = function() {
+		        window.voiceflow.chat.load({
+		          verify: { projectID: '693eb00ef77ecd303cc5f580' },
+		          url: 'https://general-runtime.voiceflow.com',
+		          versionID: 'production',
+		          voice: {
+		            url: "https://runtime-api.voiceflow.com"
+		          }
+		        });
+		      }
+		      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+		  })(document, 'script');
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'Inter', system-ui, -apple-system, sans-serif;
+		line-height: 1.6;
+		color: #1f2937;
+		background: #ffffff;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	.site-header {
+		position: sticky;
+		top: 0;
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid #e5e7eb;
+		z-index: 1000;
+		padding: 16px 0;
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 32px;
+	}
+
+	.logo {
+		font-size: 18px;
+		font-weight: 700;
+		color: #1f2937;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 32px;
+		flex: 1;
+		justify-content: center;
+	}
+
+	.nav-links a {
+		color: #4b5563;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 15px;
+		transition: color 0.2s;
+		position: relative;
+	}
+
+	.nav-links a:hover,
+	.nav-links a.active {
+		color: #1f2937;
+	}
+
+	.nav-links a.active::after {
+		content: '';
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: #1f2937;
+	}
+
+	.social-icons {
+		display: flex;
+		gap: 16px;
+	}
+
+	.social-icons a {
+		color: #4b5563;
+		transition: color 0.2s;
+		display: flex;
+		align-items: center;
+	}
+
+	.social-icons a:hover {
+		color: #1f2937;
+	}
+
+	main {
+		min-height: calc(100vh - 200px);
+	}
+
+	.site-footer {
+		background: #f9fafb;
+		border-top: 1px solid #e5e7eb;
+		padding: 48px 0 24px;
+		margin-top: 80px;
+	}
+
+	.footer-content {
+		display: grid;
+		grid-template-columns: 2fr 1fr auto;
+		gap: 48px;
+		margin-bottom: 32px;
+	}
+
+	.footer-info h3 {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 8px;
+		color: #1f2937;
+	}
+
+	.footer-info p {
+		color: #6b7280;
+		font-size: 14px;
+		margin-bottom: 4px;
+	}
+
+	.footer-info a {
+		color: #6b7280;
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.footer-info a:hover {
+		color: #1f2937;
+	}
+
+	.footer-links {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.footer-links a {
+		color: #6b7280;
+		text-decoration: none;
+		font-size: 14px;
+		transition: color 0.2s;
+	}
+
+	.footer-links a:hover {
+		color: #1f2937;
+	}
+
+	.footer-bottom {
+		padding-top: 24px;
+		border-top: 1px solid #e5e7eb;
+		text-align: center;
+	}
+
+	.footer-bottom p {
+		color: #6b7280;
+		font-size: 14px;
+	}
+
+	[data-voiceflow-widget] {
+		position: fixed !important;
+		bottom: auto !important;
+		right: 24px !important;
+		top: 24px !important;
+		z-index: 999 !important;
+	}
+
+	@media (max-width: 768px) {
+		.nav {
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		.nav-links {
+			flex-wrap: wrap;
+			gap: 16px;
+			justify-content: center;
+		}
+
+		.nav-links a.active::after {
+			display: none;
+		}
+
+		.footer-content {
+			grid-template-columns: 1fr;
+			gap: 32px;
+		}
+
+		[data-voiceflow-widget] {
+			right: 12px !important;
+			top: 12px !important;
+		}
+	}
+</style>
